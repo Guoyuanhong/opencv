@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-src=cv.imread("/home/gyh/opencv/lena.jpg")
+src=cv.imread("/home/gyh/workplace/github/opencv/lena.jpg")
 img = cv.cvtColor(src,cv.COLOR_BGR2GRAY)
 #全局阈值
 ret,thresh1=cv.threshold(img,120,255,cv.THRESH_BINARY)

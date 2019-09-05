@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-src = cv.imread("/home/gyh/opencv/lena.jpg")
+src = cv.imread("/home/gyh/workplace/github/opencv/lena.jpg")
 
 """
 梯度简单来说就是求导。
@@ -12,6 +12,6 @@ laplace = cv.Laplacian(src,-1)
 sobel = cv.Sobel(src,-1,0,1)#01表示对x求梯度，10表示对y
 
 cv.imshow("src",src)
-cv.imshow("IMG",sobel)
+cv.imshow("IMG",laplace)
 cv.waitKey(0)
 cv.destroyAllWindows()

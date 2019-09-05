@@ -4,7 +4,7 @@ import numpy as np
 #追踪图形中的某个颜色
 
 def demo():
-    capture = cv.VideoCapture("/home/gyh/opencv/demo_video.mp4")    #打开视频
+    capture = cv.VideoCapture("/home/gyh/workplace/github/opencv/demo_video.mp4")    #打开视频
 
     while True:
         ret , frame = capture.read()    #读取视频

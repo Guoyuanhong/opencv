@@ -11,7 +11,7 @@ def image_info(image):
     print(image_data)   #打印图像矩阵
 
 def vedio_read():           #由于没摄像头就不调用这个函数了
-    capture = cv.VideoCapture("/home/gyh/opencv/demo_video.mp4")  # 打开摄像头，0代表的是设备id，如果有多个摄像头，可以设置其他数值
+    capture = cv.VideoCapture(r"/home/gyh/github/opencv/demo_video.mp4")  # 打开摄像头，0代表的是设备id，如果有多个摄像头，可以设置其他数值
     while True:
         ret, frame = capture.read()  # 读取摄像头,它能返回两个参数，第一个参数是bool型的ret，其值为True或False，代表有没有读到图片；第二个参数是frame，是当前截取一帧的图片
         frame = cv.flip(frame,1)  # 翻转 0:上下颠倒 大于0水平颠倒   小于180旋转
